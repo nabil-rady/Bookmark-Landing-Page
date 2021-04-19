@@ -183,7 +183,7 @@
 
 .slider__tabs {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 300vw;
   height: 500px;
   -webkit-transition: 0.2s -webkit-transform ease-in;
@@ -426,7 +426,8 @@
 }
 
 .footer__contact__up-to-date {
-  width: 350px;
+  max-width: 350px;
+  width: 90%;
   margin: 0 auto;
   color: white;
   font-size: 1.6rem;
@@ -438,7 +439,9 @@
 }
 
 .footer__contact__form .row {
-  width: 370px;
+  max-width: 370px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .footer__contact__form__input {
@@ -602,26 +605,45 @@
     width: 100%;
     padding: 1em 0;
   }
-  .slider__tabs__tab__wrapper {
-    position: static;
+  .slider__tabs {
+    height: 625px;
+  }
+  .slider__tabs__tab__body {
+    margin-left: 0;
+  }
+  .slider__tabs__tab__body__title {
+    width: 90vw;
     margin: 0 auto;
-    padding-top: 50px;
-    width: 85%;
+    text-align: center;
+  }
+  .slider__tabs__tab__body__paragraph {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .slider__tabs__tab__wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 65%;
   }
   .slider__tabs__tab__wrapper::before {
-    top: 22vw;
-    left: -7.5vw;
-    height: 48.55vw;
-    width: 82vw;
+    position: absolute;
+    top: 14%;
+    left: -26.5%;
+    height: 100%;
+    width: 92%;
   }
   .slider__tabs__tab__wrapper__img {
-    top: -37vw;
+    top: 0;
     left: 0;
     width: 100%;
   }
   .slider__tabs__tab__wrapper__img.second, .slider__tabs__tab__wrapper__img.third {
-    left: 28.5vw;
-    width: 75%;
+    top: 0;
+    left: 17vw;
   }
   .download {
     margin-top: 0;

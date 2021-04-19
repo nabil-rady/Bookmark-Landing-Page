@@ -151,7 +151,7 @@
     }
     &__tabs{
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
         width: 300vw;
         height: 500px;
         transition:0.2s transform ease-in;
@@ -346,7 +346,8 @@
             color:white;
         }
         &__up-to-date{
-            width: 350px;
+            max-width: 350px;
+            width: 90%;
             margin:0 auto;
             color:white;
             font-size: 1.6rem;
@@ -355,7 +356,9 @@
         &__form{
             margin:0 auto;
             & .row{
-                width: 370px;
+                max-width: 370px;
+                width: 95%;
+                margin:0 auto;
             }
             &__input{
                 outline: none;
@@ -382,7 +385,6 @@
         }
     }
     &__wrapper{
-        // height: 35px;
         background-color: $dark-blue;
         color:#f6f6f6;
         &__logo{
