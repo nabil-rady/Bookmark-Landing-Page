@@ -1,0 +1,138 @@
+.header{
+    &__burgers{
+        position: absolute;
+        top:11px;
+        right: 5vw;
+        height: 26px;
+        &__burger{
+            position:relative;
+            height: 4px;
+            width: 25px;
+            top:8px;
+            background-color: $dark-blue;
+            &::before{
+                content: '';
+                position: absolute;
+                top:-8px;
+                left:0;
+                height: 4px;
+                width: 25px;
+                background-color: $dark-blue;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top:8px;
+                left:0;
+                height: 4px;
+                width: 25px;
+                background-color: $dark-blue;
+            }
+        }
+    }
+}
+
+@media (max-width:992px){
+    .intro{
+        margin-top: 60px;
+        padding-left:0;
+        width: 100vw;
+        overflow: hidden;
+        &__body{
+            width: 100%;
+            &__title{
+                width: 90%;
+                margin:0 auto;
+                text-align: center;
+            }
+            &__paragraph{
+                width: 90%;
+                margin:0 auto;
+                text-align: center;
+            }
+        }
+        &__wrapper{
+            width: 100vw;
+            margin:0 auto;
+            position: static;
+            &__image{
+                display: block;
+                width: 95vw;
+                top:-37vw;
+                margin:0 auto;
+            }
+            &::before{
+                width:100vw;
+                height: 48.55vw;
+            }
+        }
+        &__buttons{
+            justify-content: center;
+        }
+    }
+    .slider{
+        margin-top:50px;
+        &__title{
+            width: 85%;
+        }
+        &__paragraph{
+            width: 85%;
+        }
+        &__nav{
+            &__ul{
+                padding-left: 0;
+                display: block;
+                width: 85%;
+                border-top: 1px gray solid;
+                &__li{
+                    width: 100%;
+                    padding: 1em 0;
+                }
+            }
+        }
+        &__tabs{
+            &__tab{
+                &__wrapper{
+                    position: static;
+                    margin: 0 auto;
+                    padding-top:50px;
+                    width:85%;
+                    &::before{
+                        top:22vw;
+                        left:-7.5vw;
+                        height: 48.55vw;
+                        width: 82vw;
+                    }
+                    &__img{
+                        top:-37vw;
+                        left:0;
+                        width: 100%;
+                        &.second,&.third{
+                            left:28.5vw;
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .download{
+        margin-top:0;
+        &__browsers{
+            display: block;
+            &__browser{
+                position: static;
+                width: 90%;
+                padding-bottom: 5px;
+                margin: 15px auto;
+                &.firefox,&.opera{
+                    position: static;
+                }
+            }
+        }
+    }
+    .FAQs{
+        margin-top: 70px;
+    }
+}
+
