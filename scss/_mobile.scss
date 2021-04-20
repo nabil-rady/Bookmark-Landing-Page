@@ -68,6 +68,8 @@
         }
         &__buttons{
             justify-content: center;
+            width: 93%;
+            margin:0 auto
         }
     }
     .slider{
@@ -91,9 +93,10 @@
             }
         }
         &__tabs{
-            height: 625px;
+            height: 650px;
             &__tab{
                 &__body{
+                    margin-top: 84px;
                     margin-left: 0;
                     &__title{
                         width: 90vw;
@@ -155,3 +158,19 @@
     }
 }
 
+
+@media (max-width:768px){
+    .slider{
+        &__tabs{
+            height: 570px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .slider{
+        &__tabs{
+            height: 500px;
+        }
+    }
+}
