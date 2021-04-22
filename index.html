@@ -18,6 +18,34 @@
   </style>
 </head>
 <body>
+  <div class="mobile-menu container-fluid position-fixed top-0 p-0 d-lg-none">
+    <div class="mobile-menu__logo">
+      <img src="./images/logo-bookmark-mobile.svg">
+    </div>
+    <div class="mobile-menu__close position-fixed">
+      <img src="./images/icon-close.svg">
+    </div>
+    <nav class="mobile-menu__nav position-fixed">
+      <ul class="mobile-menu__nav__ul">
+        <li class="mobile-menu__nav__ul__li my-2 py-2">
+          FEATURES
+        </li>
+        <li class="mobile-menu__nav__ul__li my-2 py-2">
+          PRICING
+        </li>
+        <li class="mobile-menu__nav__ul__li my-2 py-2">
+          CONTACT          
+        </li>
+        <li class="mobile-menu__nav__ul__li my-2 py-2 login">
+          LOGIN
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__social position-fixed">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" style="padding-top:4px;" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+    </div>
+  </div>
   <header class="header">
     <img class="header__logo" src="./images/logo-bookmark.svg">
     <nav class="header__nav d-none d-lg-flex">
@@ -252,7 +280,7 @@
     </button>
   </div>
   <footer class="footer mt-5">
-    <div class="container-fluid footer__contact py-4">
+    <div class="footer__contact py-4 px-0">
       <div class="footer__contact__members text-center pt-3">
         35,000+ already joined
       </div>
@@ -262,7 +290,10 @@
       <div class="footer__contact__form mt-3">
         <div class="row">
           <div class="col-12 col-md-8">
-            <input class="footer__contact__form__input m-auto" placeholder="Enter your email address">
+            <form>
+              <input type="email" id="email" class="footer__contact__form__input m-auto my-3 my-md-0" placeholder="Enter your email address">
+              <!-- <label for="email"> Enter your email address </label> -->
+            </form>
           </div>
           <div class="col-12 col-md-4">
             <button class="btn btn-primary m-auto my-2 my-md-0" id="contact-us">
@@ -285,11 +316,11 @@
         <div class="col-md-1 col-12 m-md-0 m-auto footer__wrapper__navitem py-2">
           CONTACT
         </div>
-        <div class="col-1 offset-md-4 offset-5 p-0 py-md-0">
-          <img src="./images/icon-facebook.svg" id="facebook" class="m-auto m-md-0 my-4" style="height: 17px;">
+        <div class="col-1 offset-md-4 offset-5 p-0 py-md-0 ">
+          <svg class="m-auto m-md-0 my-4" id="facebook"  xmlns="http://www.w3.org/2000/svg" width="24" height="28"><path fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
         </div>
         <div class="col-1 p-0 py-md-0">
-          <img src="./images/icon-twitter.svg" id="twitter" class="m-auto m-md-0 my-4" style="height: 17px;">
+          <svg class="m-auto m-md-0 my-4" id="twitter" xmlns="http://www.w3.org/2000/svg" style="padding-top:4px;" width="24" height="24"><path fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
         </div>
       </div>
     </div>

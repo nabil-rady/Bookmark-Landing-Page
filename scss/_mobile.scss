@@ -1,9 +1,57 @@
+.mobile-menu{
+    background-color: $dark-blue;
+    opacity: 0.9;
+    height: 100vh;
+    z-index: 10000;
+    display: none;
+    &__logo{
+        padding: 55px 0 0 45px;
+    }
+    &__close{
+        top:55px;
+        right:45px;
+        cursor: pointer;
+    }
+    &__nav{
+        color:white;
+        width: 65%;
+        top: 120px;
+        left:17.5%;
+        &__ul{
+            list-style: none;
+            padding:0;
+            &__li{
+                text-align: center;
+                font-size:1.4rem;
+                font-weight: 400;
+                border-top: 1pt white solid;
+                &.login{
+                    border:3px solid white;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+    &__social{
+        position: fixed;
+        bottom:4vw;
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        left:35vw;
+        & svg{
+            display: block;
+            margin:0 1em;
+        }
+    }
+}
 .header{
     &__burgers{
         position: absolute;
         top:11px;
         right: 5vw;
         height: 26px;
+        cursor: pointer;
         &__burger{
             position:relative;
             height: 4px;
