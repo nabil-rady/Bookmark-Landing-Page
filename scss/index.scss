@@ -184,7 +184,7 @@ body{
     }
     &__tabs{
         position: relative;
-        overflow-x: hidden;
+        overflow: hidden;
         width: 300vw;
         height: 500px;
         transition:0.2s transform ease-in;
