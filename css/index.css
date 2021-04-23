@@ -799,6 +799,9 @@ form.show::after {
 }
 
 @media (max-width: 576px) {
+  .header__logo {
+    padding-left: 25px;
+  }
   .slider__tabs {
     height: 500px;
   }
