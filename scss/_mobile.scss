@@ -107,11 +107,14 @@
                 display: block;
                 width: 95vw;
                 top:-37vw;
+                max-width: 10000px;
                 margin:0 auto;
             }
             &::before{
                 width:100vw;
                 height: 48.55vw;
+                top: 34vw;
+                right: -28vw;
             }
         }
         &__buttons{
